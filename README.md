@@ -60,7 +60,7 @@ uvicorn main:app --reload
 The application will be accessible at `http://127.0.0.1:8000`.
 
 
-## Note we need to chnage "Adhaaaam "
+## Note we need to change "Adhaaaam "
 - Design of web
 - So need to chnage in main .py for rendering page
 - Make sure that all packages is good and make  uvicorn main:app --reload for tetsing webpage and complete
