@@ -113,7 +113,6 @@ To run tests, use the following command:
 ```bash
 pytest
 ```
-
 This will execute any test cases defined for the project.
 ```
 
