@@ -1,0 +1,148 @@
+body {
+  background-color: #00000034; /* Fallback background color */
+  background-image: url('/static/photo1.png'); /* Background photo */
+  background-repeat: no-repeat;
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-custom {
+  background: linear-gradient(135deg, #3a7bd5, #09425f); /* Gradient background */
+  color: #3a7cd8; /* Text color */
+  padding: 1rem 2rem; /* Padding for the navbar */
+  font-size: 1.2rem; /* Increase font size */
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 1.5rem; /* Larger font size for brand/logo */
+  text-align: center; /* Center align the brand/logo */
+}
+
+.navbar-custom .navbar-nav {
+  text-align: center; /* Center align navbar items */
+}
+
+.navbar-custom .nav-link {
+  color: #ffffff; /* Navbar item text color */
+  font-size: 1.3rem; /* Increase font size */
+  padding: 0.5rem 1rem; /* Padding around navbar items */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.navbar-custom .nav-link:hover {
+  color: #75df7a; /* Hover color */
+}
+
+/* Optional: If you want the navbar to be sticky at the top */
+.navbar-custom.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Center the title */
+.navbar-custom .navbar-brand {
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-custom .navbar-collapse {
+      text-align: center; /* Center align collapsed navbar items */
+  }
+}
+
+header {
+  background: linear-gradient(135deg, #2e2c2c, #5e96e4);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  background-size: cover;
+  background-position: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+header p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0;
+}
+.main-container {
+  margin-top: 20px;
+}
+.card-custom {
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: linear-gradient(140deg, #0c40e9, #efebf3);
+  border: none;
+}
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  margin-bottom: 30px;
+  color: #010e14;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.btn-custom {
+  background-color: #3a6073;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn-custom:hover {
+  background-color: #2b4c5e;
+  transform: scale(1.05);
+}
+.form-control {
+  border-radius: 20px;
+  padding: 10px;
+}
+.form-select {
+  border-radius: 20px;
+  padding: 10px;
+}
+#result {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+#loading {
+  display: none;
+}
+#promptForm {
+  display: none;
+}
+.spinner-border {
+  color: #3a6073;
+}
+footer {
+  background: linear-gradient(135deg, #3a6073, #3a7bd5);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 40px;
+}
+footer p {
+  margin: 0;
+}
+a.navbar-brand img {
+  height: 40px;
+}
+.img-fluid.rounded-circle {
+  max-width: 150px;
+  height: auto;
+}
