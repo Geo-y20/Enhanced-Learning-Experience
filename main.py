@@ -2,6 +2,9 @@ import os
 import moviepy.editor as mp
 from fastapi import FastAPI, File, UploadFile, Form, HTTPException
 from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+from starlette.requests import Request
 from dotenv import load_dotenv
 from audio_transcription import transcribe_audio
 from pdf_processor import preprocess_pdf, parse_pdf_content, paginate_text
@@ -14,17 +17,24 @@ app = FastAPI()
 # Load environment variables from .env file
 load_dotenv(dotenv_path="file.env")
 
+# Define valid file extensions
 VALID_VIDEO_EXTENSIONS = {".mp4", ".avi", ".mov", ".flv"}
 VALID_AUDIO_EXTENSIONS = {".mp3", ".wav", ".opus"}
 VALID_PDF_EXTENSION = ".pdf"
 
+# Setup templates and static files directories
+templates = Jinja2Templates(directory="templates")
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
 logging.basicConfig(level=logging.INFO)
 
 @app.get("/", response_class=HTMLResponse)
-async def read_root():
-    with open("templates/upload_form.html", "r") as f:
-        html_content = f.read()
-    return HTMLResponse(content=html_content)
+async def read_root(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
+
+@app.get("/about", response_class=HTMLResponse)
+async def about_page(request: Request):
+    return templates.TemplateResponse("about.html", {"request": request})
 
 @app.post("/upload")
 async def upload_file(file: UploadFile = File(...)):
@@ -83,6 +93,22 @@ async def upload_file(file: UploadFile = File(...)):
     total_time = time.time()
     logging.info(f"Total time: {total_time - start_time} seconds")
 
+@app.post("/process_prompt")
+async def process_prompt(fileType: str = Form(...), fileContent: str = Form(...), prompt: str = Form(...)):
+    start_time = time.time()
+    logging.info("Prompt processing initiated")
+
+    if fileType in ["pdf", "audio", "video"]:
+        response = await get_groq_completion(prompt + "\n\n" + fileContent)
+    else:
+        logging.error("Unsupported file type: %s", fileType)
+        raise HTTPException(status_code=400, detail="Unsupported file type")
+
+    total_time = time.time()
+    logging.info(f"Total time to process prompt: {total_time - start_time} seconds")
+
+    return {"response": response}
+
 async def handle_pdf(file_path: str):
     start_time = time.time()
     logging.info("PDF processing initiated")
@@ -133,22 +159,6 @@ def convert_to_wav(in_path, out_path):
         logging.exception("Error converting file to WAV")
         raise IOError(f"Error converting file to WAV: {str(e)}")
     return out_path
-
-@app.post("/process_prompt")
-async def process_prompt(fileType: str = Form(...), fileContent: str = Form(...), prompt: str = Form(...)):
-    start_time = time.time()
-    logging.info("Prompt processing initiated")
-
-    if fileType in ["pdf", "audio", "video"]:
-        response = await get_groq_completion(prompt + "\n\n" + fileContent)
-    else:
-        logging.error("Unsupported file type: %s", fileType)
-        raise HTTPException(status_code=400, detail="Unsupported file type")
-
-    total_time = time.time()
-    logging.info(f"Total time to process prompt: {total_time - start_time} seconds")
-
-    return {"response": response}
 
 if __name__ == "__main__":
     import uvicorn
