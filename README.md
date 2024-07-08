@@ -174,10 +174,13 @@ The following individuals collaborated on this project:
 ## System Architecture
 
 ### High-Level Architecture
-![System Architecture](https://via.placeholder.com/800x400?text=System+Architecture)
+![System Architecture](https://github.com/Geo-y20/IntelliLearn/blob/main/Diagrams/model.JPG)
 
 ### Data Flow Diagram
-![Data Flow Diagram](https://via.placeholder.com/800x400?text=Data+Flow+Diagram)
+![Data Flow Diagram](https://github.com/Geo-y20/IntelliLearn/blob/main/Diagrams/preprocessing%20schema.JPG)
+
+## Demonistartion 
+![Demonistartion](https://github.com/Geo-y20/IntelliLearn/blob/main/Diagrams/demonistartion.JPG)
 
 ## Conclusion
 
