@@ -4,6 +4,31 @@
   <img src="https://github.com/Geo-y20/IntelliLearn/blob/main/logo-no-background.png" alt="IntelliLearn Logo" width="200"/>
 </p>
 IntelliLearn is a FastAPI-based application designed to process and transcribe audio and video files into text using the Whisper model. The application also supports processing PDF files to extract and summarize their content.
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Running Tests](#running-tests)
+- [Getting the Groq API Key](#getting-the-groq-api-key)
+- [Contributors](#contributors)
+- [Screenshots](#screenshots)
+- [System Architecture](#system-architecture)
+- [Video Demonstration](#video-demonstration)
+- [Conclusion](#conclusion)
+- [Future Work](#future-work)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [Contact Information](#contact-information)
+
+
+
+
+
+
+
+
 
 ## Features
 
@@ -245,3 +270,38 @@ To better understand how IntelliLearn works and see it in action, you can watch 
 [![Graduation Project Video](https://github.com/Geo-y20/IntelliLearn/blob/main/Photos%20Sample%20Website/home.JPG)](https://github.com/Geo-y20/IntelliLearn/blob/main/Final%20Video%20Graduation%20Project.mp4)
 ## If video not wokring acees through Google drive
 https://drive.google.com/file/d/1eyV9Obfanh6zeEz3LOUkwWPLhnhkI_UB/view?usp=drive_link 
+
+
+Here's the additional sections you requested:
+
+## Technologies Used
+
+IntelliLearn leverages the following technologies:
+- **FastAPI**: For building the web application and API endpoints.
+- **Python**: Core programming language used for development.
+- **FFmpeg**: For audio and video processing.
+- **Whisper Model**: For audio transcription.
+- **Groq API**: For generating completions based on provided prompts.
+- **HTML/CSS/JavaScript**: For the web interface.
+
+## Contributing
+
+We welcome contributions to IntelliLearn! To contribute:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
+
+
+
+## Contact Information
+
+For questions or feedback, please contact:
+
+- **Project Supervisor**: Dr. Ahmed el Shaer
+- **Technical Advisors**: Eng. Nagy Khairat, Eng. Ahmed Metwali
+- **Team Members**: Ahmed Nasser, Adham Sherif, George Youhana, Magda Elroumany, Sawsan Kassem, Sohaila Khaled
+
+You can also open an issue on the GitHub repository for any project-related queries.
