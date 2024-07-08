@@ -228,9 +228,16 @@ In this project, we developed "IntelliLearn," an advanced AI system designed to 
     - Conduct extensive evaluations and benchmarking against existing educational tools to continuously measure and improve IntelliLearn’s effectiveness.
     - Publish findings in academic and industry forums to contribute to the broader field of educational technology.
 
-## Video Presentation
 
-[![Graduation Project Video](https://github.com/Geo-y20/IntelliLearn/blob/main/Photos%20Sample%20Website/home.JPGg)](https://drive.google.com/file/d/1eyV9Obfanh6zeEz3LOUkwWPLhnhkI_UB/view?usp=sharing)
+## Video Demonstration
 
----
+To better understand how IntelliLearn works and see it in action, you can watch our detailed video demonstration. The video covers the following aspects:
+
+- Overview of IntelliLearn and its features
+- Step-by-step guide on how to upload and process files
+- Examples of audio, video, and PDF file processing
+- Transcription and summarization outputs
+- Insights into the system architecture and data flow
+
+[![Graduation Project Video](https://img.youtube.com/vi/1eyV9Obfanh6zeEz3LOUkwWPLhnhkI_UB/0.jpg)](https://drive.google.com/file/d/1eyV9Obfanh6zeEz3LOUkwWPLhnhkI_UB/view?usp=sharing)
 
