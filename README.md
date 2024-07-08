@@ -124,6 +124,20 @@ pytest
 
 This will execute any test cases defined for the project.
 
+## Getting the Groq API Key
+
+To obtain a Groq API key, follow these steps:
+
+1. Visit the [Groq Cloud website](https://groq.com/cloud).
+2. Sign up for an account or log in if you already have one.
+3. Navigate to the API section in your account dashboard.
+4. Generate a new API key and copy it.
+5. Add the API key to your `.env` file in the project root as follows:
+
+    ```
+    GROQ_API_KEY=your_groq_api_key_here
+    ```
+
 ## Contributors
 
 This project was developed as part of a graduation project supervised by:
@@ -146,7 +160,10 @@ The following individuals collaborated on this project:
 ## Screenshots
 
 ### Home Page
-![Home Page](https://via.placeholder.com/800x400?text=Home+Page)
+![Home Page](https://github.com/Geo-y20/IntelliLearn/blob/main/home.JPG)
+
+### About Page
+![About Page](https://github.com/Geo-y20/IntelliLearn/blob/main/about.JPG)
 
 ### File Upload
 ![File Upload](https://via.placeholder.com/800x400?text=File+Upload)
@@ -162,12 +179,55 @@ The following individuals collaborated on this project:
 ### Data Flow Diagram
 ![Data Flow Diagram](https://via.placeholder.com/800x400?text=Data+Flow+Diagram)
 
-## Project Impact
+## Conclusion
 
-IntelliLearn aims to enhance educational experiences by leveraging advanced AI technologies to provide efficient content processing and user-friendly interaction. It bridges the gap between vast information sources and users, facilitating better understanding and retention of complex information.
+In this project, we developed "IntelliLearn," an advanced AI system designed to enhance content accessibility and comprehension through sophisticated text analysis, summarization, and generation. By integrating cutting-edge technologies such as OpenAI's Whisper and xAI's Grok, IntelliLearn processes a wide variety of content types, including PDFs, images, audio files, and videos. Leveraging state-of-the-art NLP and machine learning techniques, IntelliLearn facilitates better understanding and retention of complex information. The system effectively bridges the gap between vast information sources and users, providing a user-friendly interface and robust educational support. IntelliLearn not only enhances the accessibility of educational content but also streamlines the process of information extraction and utilization, thereby significantly contributing to the field of educational technology.
 
-## Acknowledgments
+## Future Work
 
-We would like to express our heartfelt gratitude to the individuals and institutions who have supported and guided us throughout this project. Special thanks to Dr. Ahmed El Shaer for his invaluable mentorship and continuous encouragement, Eng. Nagy Khairat and Eng. Ahmed Metwali for their technical expertise and assistance, and our families and friends for their unwavering support.
+1. **Integration of Additional Language Models**:
+   - Incorporate more advanced language models and domain-specific knowledge bases to enhance performance and context awareness.
+   - Explore the integration of multilingual support to cater to a broader audience.
+
+2. **Reinforcement Learning for Optimization**:
+   - Investigate the application of reinforcement learning techniques to optimize text summarization and generation processes.
+   - Utilize reinforcement learning to adapt and improve model responses based on user interactions and feedback.
+
+3. **Enhanced Accessibility Features**:
+   - Develop and implement additional accessibility features to support users with disabilities, ensuring inclusivity.
+   - Gather comprehensive user feedback to identify areas for improvement and iteratively enhance the system’s usability.
+
+4. **Advanced Video Summarization**:
+   - Expand the system’s capabilities to include video summarization, allowing users to extract key information from educational videos efficiently.
+   - Implement lecture summary functionalities to assist students in reviewing and understanding lecture content.
+
+5. **Visual Aids Generation**:
+   - Develop tools to automatically generate visual aids such as charts, graphs, and infographics from text content, aiding visual learners.
+   - Enhance the system’s ability to create interactive and engaging educational materials.
+
+6. **User-Centric Enhancements**:
+   - Continuously refine the user interface based on user experience research to ensure it remains intuitive and user-friendly.
+   - Introduce personalized learning paths and recommendations based on user performance and preferences.
+
+7. **Scalability and Performance Improvements**:
+   - Invest in scalable cloud infrastructure to handle increasing data volumes and user load without compromising performance.
+   - Optimize algorithms for faster processing times and lower latency in real-time applications.
+
+8. **Compliance and Security Enhancements**:
+   - Ensure ongoing compliance with data protection regulations (e.g., GDPR, CCPA) to maintain user trust and data security.
+   - Implement advanced security measures to protect user data during transmission, processing, and storage.
+
+9. **Educational Partnerships**:
+   - Collaborate with more educational institutions to integrate IntelliLearn into their systems, tailoring solutions to meet specific needs.
+   - Establish partnerships with educational content creators to expand the range of supported materials.
+
+10. **Comprehensive Evaluation and Benchmarking**:
+    - Conduct extensive evaluations and benchmarking against existing educational tools to continuously measure and improve IntelliLearn’s effectiveness.
+    - Publish findings in academic and industry forums to contribute to the broader field of educational technology.
+
+## Video Presentation
+
+[![Graduation Project Video](https://img.youtube.com/vi/1eyV9Obfanh6zeEz3LOUkwWPLhnhkI_UB/0.jpg)](https://drive.google.com/file/d/1eyV9Obfanh6zeEz3LOUkwWPLhnhkI_UB/view?usp=sharing)
 
 ---
+
