@@ -243,3 +243,5 @@ To better understand how IntelliLearn works and see it in action, you can watch 
 - Insights into the system architecture and data flow
 
 [![Graduation Project Video](https://github.com/Geo-y20/IntelliLearn/blob/main/Photos%20Sample%20Website/home.JPG)](https://github.com/Geo-y20/IntelliLearn/blob/main/Final%20Video%20Graduation%20Project.mp4)
+## If video not wokring acees through Google drive
+https://drive.google.com/file/d/1eyV9Obfanh6zeEz3LOUkwWPLhnhkI_UB/view?usp=drive_link 
