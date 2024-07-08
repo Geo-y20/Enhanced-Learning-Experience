@@ -1,5 +1,8 @@
 # IntelliLearn
 
+<p align="center">
+  <img src="https://github.com/Geo-y20/IntelliLearn/blob/main/logo-no-background.png" alt="IntelliLearn Logo" width="200"/>
+</p>
 IntelliLearn is a FastAPI-based application designed to process and transcribe audio and video files into text using the Whisper model. The application also supports processing PDF files to extract and summarize their content.
 
 ## Features
