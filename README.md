@@ -160,16 +160,16 @@ The following individuals collaborated on this project:
 ## Screenshots
 
 ### Home Page
-![Home Page](https://github.com/Geo-y20/IntelliLearn/blob/main/home.JPG)
+![Home Page](https://github.com/Geo-y20/IntelliLearn/blob/main/Photos%20Sample%20Website/home.JPG)
 
 ### About Page
-![About Page](https://github.com/Geo-y20/IntelliLearn/blob/main/about.JPG)
+![About Page](https://github.com/Geo-y20/IntelliLearn/blob/main/Photos%20Sample%20Website/about.JPG)
 
 ### File Upload
-![File Upload](https://via.placeholder.com/800x400?text=File+Upload)
+![File Upload](https://github.com/Geo-y20/IntelliLearn/blob/main/Photos%20Sample%20Website/upload.JPG)
 
 ### Results
-![Results](https://via.placeholder.com/800x400?text=Results)
+![Results](https://github.com/Geo-y20/IntelliLearn/blob/main/Photos%20Sample%20Website/results.JPG)
 
 ## System Architecture
 
@@ -227,7 +227,7 @@ In this project, we developed "IntelliLearn," an advanced AI system designed to 
 
 ## Video Presentation
 
-[![Graduation Project Video](https://img.youtube.com/vi/1eyV9Obfanh6zeEz3LOUkwWPLhnhkI_UB/0.jpg)](https://drive.google.com/file/d/1eyV9Obfanh6zeEz3LOUkwWPLhnhkI_UB/view?usp=sharing)
+[![Graduation Project Video](https://github.com/Geo-y20/IntelliLearn/blob/main/Photos%20Sample%20Website/home.JPGg)](https://drive.google.com/file/d/1eyV9Obfanh6zeEz3LOUkwWPLhnhkI_UB/view?usp=sharing)
 
 ---
 
