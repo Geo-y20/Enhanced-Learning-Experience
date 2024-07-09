@@ -1,4 +1,4 @@
-# IntelliLearn
+# Enhanced-Learning-Experience --- IntelliLearn
 
 <p align="center">
   <img src="https://github.com/Geo-y20/IntelliLearn/blob/main/logo-no-background.png" alt="IntelliLearn Logo" width="200"/>
